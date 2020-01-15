@@ -45,10 +45,7 @@ page {
         // allows to omit extension name in f:translate ViewHelpers
         extbase.controllerExtensionName = cookieman
 
-        # evaluate settings during rendering. With FLUIDTEMPLATE.settings we would prevent overwritability
-        dataProcessing {
-            1 = Dmind\Cookieman\DataProcessing\TypoScriptSettingsProcessor
-        }
+        settings < plugin.tx_cookieman.settings
     }
 }
 
